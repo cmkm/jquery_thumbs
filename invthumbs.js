@@ -1,4 +1,4 @@
-$(document).ready(function({
+$(document).ready(function(){
 
 	$("ul.invthumbs > li, ul.invthumbs2 > li").mouseenter(
     function() {

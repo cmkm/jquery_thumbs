@@ -1,0 +1,127 @@
+/* invthumbs that will appear last in their row (closest to right edge) should be assigned a to the 'edge' class in order to fix the margins */
+
+/* left-floating big thumbnail */
+
+      /* div containing ul.invthumbs */
+
+      img{
+        border-radius: 5px
+      }
+
+      #thumbgallery{
+        background-color:#ddd;
+        border-radius:5px;
+        padding-top:5px;
+        padding-bottom:5px;
+        min-height:350px;
+        width:600px;
+      }
+
+    	div.infopane{    		
+        display:none;
+        width:240px !important;
+        height:90px !important;
+        padding:5px;
+        font-size:0.8em;
+    	}
+
+      .infopane h3{
+        margin:0;
+        padding:2px;
+      }
+
+      .edge{
+        margin-left:-130px;
+      }
+
+    	ul.invthumbs li{
+    		display:block;
+    		position:relative !important;
+        text-decoration:none;
+        list-style-type:none;
+        float: left;
+        padding:0 0;
+        margin: 5px 5px;
+    	}
+
+        ul.invthumbs li a{
+          display:block;          
+          height: 100px;
+        }
+
+        ul.invthumbs li.big a{
+          height: 200px;
+        }
+
+        ul.invthumbs li.big div{
+          height:210px !important;
+        }
+
+    	ul.invthumbs img{
+    		border-radius:5px;
+    	}
+
+      ul.invthumbs > li > a > img.big{
+        width:250px; /* make everything line up properly */
+      }
+
+    	ul.invthumbs div{
+    		position:absolute;
+    		top:0;
+    		left:0;
+    		z-index:2;
+    		border-radius:5px;
+    		height:100px;
+    		width:200px;
+    		color:#333;
+    		background-color:#eee;
+    	}
+
+/* right-floating big thumbnail */      
+
+    #thumbgallery2{
+      background-color:#33CCFF;
+      border-radius:5px;
+      padding-top:5px;
+      padding-bottom:10px;
+      min-height:350px;
+      width:600px;
+      padding-left: -400px !important;
+    }
+
+    ul.invthumbs2{
+      margin-left:-35px; /* won't centre any other way */
+      width:550px;
+    }
+
+      ul.invthumbs2 li{
+        display:block;
+        position:relative !important;
+        text-decoration:none;
+        list-style-type:none;
+        float: right;
+        padding:0 0;
+        margin: 5px 5px;
+      }
+
+      ul.invthumbs2 > li > a > img.big{
+        width:250px; /* make everything line up properly */
+        height:215px;
+      }
+
+      ul.invthumbs2 div{
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:2;
+        border-radius:5px;
+        height:100px;
+        width:200px;
+        color:#333;
+        background-color:#eee;
+      }
+
+
+      ul.invthumbs2 li.big_right div{
+        height:210px !important;
+      }
